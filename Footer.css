@@ -1,0 +1,245 @@
+/* Wrapper do aplicativo */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o wrapper ocupe toda a altura da tela */
+}
+
+/* Estilos para o footer */
+.footer {
+  width: 100%; /* Largura total */
+  padding: 30px; /* Espaçamento interno padrão */
+  background-color: #000000; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  text-align: center; /* Alinhamento do conteúdo */
+  position: relative; /* Corrigido o posicionamento */
+}
+
+@media (min-width: 576px) {
+  .footer {
+    padding: 40px; /* Aumenta o padding para telas médias */
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 50px; /* Aumenta o padding para telas maiores */
+  }
+}
+@media (max-width: 992px) {
+  .footer {
+    padding: 90px; /* Aumenta o padding para telas grandes */
+  }
+}
+@media (min-width: 992px) {
+  .footer {
+    padding: 70px; /* Aumenta o padding para telas grandes */
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 10px; /* Aumenta o padding para telas extra grandes */
+  }
+}
+
+/* Container do logo */
+.logo-container {
+  margin-bottom: 20px; /* Espaçamento inferior */
+  margin-top: 15px;
+}
+
+/* Estilos para o logotipo da empresa */
+.company-logo1 {
+  height: 100%;
+}
+
+/* Estilos para os ícones sociais */
+.about-social {
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 0; /* Espaçamento interno zero */
+  margin: 0; /* Margem zero */
+  display: flex; /* Exibe os itens em linha */
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 30px; /* Espaçamento entre os ícones */
+  margin: 0 auto;
+  height: auto;
+  max-width: 25em;
+}
+
+.about-social li {
+  display: inline-block; /* Exibe os itens em linha */
+  font-size: large; /* Tamanho da fonte */
+}
+
+.about-social li a {
+  font-size: 26px; /* Tamanho dos ícones */
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Transição suave */
+  color: #000000; /* Cor do ícone */
+  background-color: #000000cc; /* Cor de fundo do ícone */
+  border-radius: 45%; /* Borda circular */
+  display: flex; /* Exibe os itens em linha */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  width: 35px; /* Largura do círculo */
+  height: 35px; /* Altura do círculo */
+}
+
+.about-social li a:hover {
+  color: rgba(0, 0, 0, 0.932); /* Cor do texto ao passar o mouse */
+  background-color: hsl(0, 3%, 35%); /* Cor de fundo ao passar o mouse */
+}
+
+/* Cores específicas para cada rede social */
+.about-social li a[href*="facebook.com"] {
+  color: #ffffff; /* Cor do Facebook */
+}
+
+.about-social li a[href*="youtube.com"] {
+  color: #ffffff; /* Cor do YouTube */
+}
+
+.about-social li a[href*="linkedin.com"] {
+  color: #ffffff; /* Cor do LinkedIn */
+}
+
+.about-social li a[href*="instagram.com"] {
+  color: #ffffff; /* Cor do Instagram */
+}
+
+.about-social li a[href*="mailto:"] {
+  color: #ffffff; /* Cor do ícone de e-mail */
+}
+
+/* Estilos para o texto de direitos autorais */
+.copyright {
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilos para o título do direitos autorais */
+.copyright h3 {
+  margin: 0; /* Margem zero */
+  color: #000000; /* Cor do texto */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px; /* Ajusta o padding para telas menores */
+  }
+
+  .about-social {
+    gap: 20px; /* Ajusta o espaçamento entre os ícones sociais */
+  }
+
+  .about-social li a {
+    font-size: 22px; /* Ajusta o tamanho dos ícones */
+    width: 30px; /* Ajusta o tamanho do círculo dos ícones */
+    height: 30px; /* Ajusta o tamanho do círculo dos ícones */
+  }
+}
+
+@media (max-width: 430px) {
+  .footer {
+    padding: 20px; /* Ajusta o padding para telas muito pequenas */
+  }
+
+  @media (min-width: 1200px){
+li {
+    margin: 1 auto;
+    width: 16em;
+    }   
+  }
+
+  @media (max-width: 1200px){
+    .footer-links1 ul {
+      font-size: 7px;
+      }
+  }
+
+  .about-social {
+    gap: 0px;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-left: 6px;  }
+
+  .about-social li a {
+    font-size: 20px; /* Ajusta o tamanho dos ícones */
+    width: 25px; /* Ajusta o tamanho do círculo dos ícones */
+    height: 25px; /* Ajusta o tamanho do círculo dos ícones */
+  }
+}
+
+/* Estilos gerais para links de rodapé */
+.footer-links1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-links1 ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-left: -13px;
+}
+
+.footer-links1 li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-links1 li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+@media (min-width: 992px){
+  .company-logo1 {
+    width: 35%;
+    margin: 0 auto
+  }}
+
+@media (max-width: 992px){
+.company-logo1 {
+  width: 65%;
+  margin: 0 auto
+}
+.footer-links1 ul {
+font-size: 7px;
+}
+}
+
+@media (max-width: 768px){
+  .company-logo1 {
+    width: 65%;
+    margin: 0 auto;
+  }}
+
+  @media (max-width: 576px){
+    .company-logo1 {
+      width: 76%;
+      margin: 0 auto;
+    }}
+
+    @media (max-width: 400px){
+      .company-logo1 {
+        width: 82%;
+        margin: 0 auto
+      }}
+
+.footer-links1 li a:hover {
+  color: #ccc;
+}
+
+.footer-links1 li span {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  background-color: #000000;
+  border-radius: 50%;
+  margin: 0 5px;
+}
